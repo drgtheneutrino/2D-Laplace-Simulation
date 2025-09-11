@@ -28,37 +28,6 @@ This runs the simulation with default parameters:
 - Left wall: 50°
 - Right wall: 75°
 
-### Customization
-
-Edit the parameters in `heat_simulation.py`:
-
-```python
-sim = HeatEquilibriumSimulation(
-    rows=100,                      # Number of grid rows
-    cols=150,                      # Number of grid columns
-    temp_top=100,                  # Top boundary temperature
-    temp_bottom=0,                 # Bottom boundary temperature
-    temp_left=50,                  # Left boundary temperature
-    temp_right=75,                 # Right boundary temperature
-    convergence_threshold=0.001    # Stop when avg change < this value
-)
-```
-
-### High Resolution Example
-
-For a detailed simulation with thousands of cells:
-
-```python
-sim = HeatEquilibriumSimulation(
-    rows=1000,
-    cols=1500,
-    temp_top=1000,
-    temp_bottom=200,
-    temp_left=500,
-    temp_right=750,
-    convergence_threshold=0.0001
-)
-```
 
 ## How It Works
 
